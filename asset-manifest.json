@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/scinext-project.github.io/static/css/main.46ea13d1.css",
-    "main.js": "/scinext-project.github.io/static/js/main.49b9b48f.js",
-    "static/js/787.e740e6cc.chunk.js": "/scinext-project.github.io/static/js/787.e740e6cc.chunk.js",
-    "index.html": "/scinext-project.github.io/index.html",
-    "main.46ea13d1.css.map": "/scinext-project.github.io/static/css/main.46ea13d1.css.map",
-    "main.49b9b48f.js.map": "/scinext-project.github.io/static/js/main.49b9b48f.js.map",
-    "787.e740e6cc.chunk.js.map": "/scinext-project.github.io/static/js/787.e740e6cc.chunk.js.map"
+    "main.css": "/static/css/main.46ea13d1.css",
+    "main.js": "/static/js/main.9ed5e45e.js",
+    "static/js/787.e740e6cc.chunk.js": "/static/js/787.e740e6cc.chunk.js",
+    "index.html": "/index.html",
+    "main.46ea13d1.css.map": "/static/css/main.46ea13d1.css.map",
+    "main.9ed5e45e.js.map": "/static/js/main.9ed5e45e.js.map",
+    "787.e740e6cc.chunk.js.map": "/static/js/787.e740e6cc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.46ea13d1.css",
-    "static/js/main.49b9b48f.js"
+    "static/js/main.9ed5e45e.js"
   ]
 }
