@@ -11,12 +11,12 @@ class Result extends Component {
                 <Row>
                     <Col xs="6">
                         <div className='center-heading'>
-                            <h5>Labels</h5>
+                            <h5>Human Annotation</h5>
                         </div>
                     </Col>
                     <Col xs="6">
                         <div className='center-heading'>
-                            <h5>Predictions</h5>
+                            <h5>LLM Prediction</h5>
                         </div>
                     </Col>
                 </Row>
