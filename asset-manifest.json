@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.0546ed9d.css",
-    "main.js": "/static/js/main.21448c15.js",
+    "main.css": "/static/css/main.6315f6a5.css",
+    "main.js": "/static/js/main.0b3cc077.js",
     "static/js/787.e740e6cc.chunk.js": "/static/js/787.e740e6cc.chunk.js",
     "static/media/scinext-logo.png": "/static/media/scinext-logo.116c277c1591fdd737ee.png",
     "index.html": "/index.html",
-    "main.0546ed9d.css.map": "/static/css/main.0546ed9d.css.map",
-    "main.21448c15.js.map": "/static/js/main.21448c15.js.map",
+    "main.6315f6a5.css.map": "/static/css/main.6315f6a5.css.map",
+    "main.0b3cc077.js.map": "/static/js/main.0b3cc077.js.map",
     "787.e740e6cc.chunk.js.map": "/static/js/787.e740e6cc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0546ed9d.css",
-    "static/js/main.21448c15.js"
+    "static/css/main.6315f6a5.css",
+    "static/js/main.0b3cc077.js"
   ]
 }
