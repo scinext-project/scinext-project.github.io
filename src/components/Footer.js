@@ -10,7 +10,7 @@ class Footer extends Component {
                 <Row>
                     <Col>
                         <footer className="footer">
-                            <p className="footer-content">&copy; {new Date().getFullYear()} SCINEXT - Neural-Symbolic SCholarly InnovatioN EXTraction | <a href="https://orkg.org/about/32/SciNEXT" target='_blank' rel="noreferrer">SCINEXT</a></p>
+                            <p className="footer-content">&copy; {new Date().getFullYear()} SCINEXT - Neural-Symbolic SCholarly InnovatioN EXTraction</p>
                         </footer>
                     </Col>
                 </Row>
