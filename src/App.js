@@ -3,47 +3,25 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Abstract from './components/Abstract';
-import Result from './components/Result';
-import Description from './components/Description';
-import testdata from './../src/test_data.json'
+import { Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import R0Estimation from './pages/R0Estimation'
+import Sota from './pages/Sota';
 
 import { Container } from 'reactstrap'
 
 class App extends Component {
-
-  constructor(props) {
-    super(props);
-
-    const data = testdata['Sheet1'][Math.floor(Math.random() * 300) + 1]
-
-    this.state = {
-      title: data['title'],
-      abstract: data['abstract'],
-      label: data['json_response'],
-      prediction: data['json_model_response']
-    };
-  }
-
-  onRefresh = () => {
-    const data = testdata['Sheet1'][Math.floor(Math.random() * 300) + 1]
-    
-    this.setState({
-      title: data['title'],
-      abstract: data['abstract'],
-      label: data['json_response'],
-      prediction: data['json_model_response']
-    });
-  }
 
   render() {
     return (
       <div>
         <Container>
           <Header />
-          <Description />
-          <Abstract title = {this.state.title} abstract = {this.state.abstract} onClick = {this.onRefresh} />
-          <Result label = {this.state.label} prediction = {this.state.prediction} />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/r0-estimates' element={<R0Estimation />} />
+            <Route path='/sota' element={<Sota />} />
+          </Routes>
           <Footer />
         </Container>
       </div>

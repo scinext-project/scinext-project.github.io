@@ -12,3 +12,13 @@
   margin-right: 20px;
   height: 60px;
 }
+
+.navlink {
+  text-decoration: None;
+  margin: 0px 10px;
+  color: rgb(46,183,203);
+}
+
+nav a.active{
+  font-weight: bold;
+}
