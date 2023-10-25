@@ -15,7 +15,7 @@ class Intro extends Component {
                 <h5>Senior Advisor</h5>
                 <p>Prof. Dr. Sören Auer</p>
                 <h5>Team</h5>
-                <p>Julia Evans, Mahsa Shamsabadi, Hamed Babaei Giglou, Yaser Jaradeh,  and Omar Arab-Oghli. </p>
+                <p>Julia Evans, Mahsa Shamsabadi, Hamed Babaei Giglou</p>
                 <h5>Funding</h5>
                 <p>Federal Ministry of Education and Research (BMBF) Grant<br />Föderkennzeichen: 01lS22070</p>
                 <h5>Duration</h5>
