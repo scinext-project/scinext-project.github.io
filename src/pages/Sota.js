@@ -10,7 +10,11 @@ class Sota extends Component {
   constructor(props) {
       super(props);
 
-      const data = sota_data[Math.floor(Math.random() * 450) + 1]
+      let data = sota_data[Math.floor(Math.random() * 450) + 1]
+      while (!this.checkJson(data['LLM prediction']) || !this.checkJson(data['PWC Annotation'])){
+        data = sota_data[Math.floor(Math.random() * 450) + 1]
+      }
+      
       this.label_heading = 'PWC Annotation'
       this.prediction_heading = 'LLM Prediction'
 
@@ -22,15 +26,28 @@ class Sota extends Component {
       };
   }
 
+  checkJson(jsonString){
+    try{
+        JSON.parse(jsonString)
+        return true;
+    }catch (error){
+      return false;
+    }
+  }
+
   onRefresh = () => {
-      const data = sota_data[Math.floor(Math.random() * 450) + 1]
-      
-      this.setState({
-          title: "",
-          abstract: data['Context'],
-          label: data['PWC Annotation'],
-          prediction: data['LLM prediction']
-      });
+    
+    let data = sota_data[Math.floor(Math.random() * 450) + 1]
+    while (!this.checkJson(data['LLM prediction']) || !this.checkJson(data['PWC Annotation'])){
+      data = sota_data[Math.floor(Math.random() * 450) + 1]
+    }
+    
+    this.setState({
+        title: "",
+        abstract: data['Context'],
+        label: data['PWC Annotation'],
+        prediction: data['LLM prediction']
+    });
   }
 
   render() {
