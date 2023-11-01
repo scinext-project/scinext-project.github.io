@@ -10,6 +10,8 @@ class R0Estimation extends Component {
         super(props);
 
         const data = testdata['Sheet1'][Math.floor(Math.random() * 300) + 1]
+        this.label_heading = 'Human Annotation'
+        this.prediction_heading = 'LLM Prediction'
 
         this.state = {
             title: data['title'],
@@ -35,7 +37,8 @@ class R0Estimation extends Component {
             <div>
                 <Description />
                 <Abstract title = {this.state.title} abstract = {this.state.abstract} onClick = {this.onRefresh} />
-                <Result label = {this.state.label} prediction = {this.state.prediction} />
+                <Result label = {this.state.label} prediction = {this.state.prediction} 
+                label_heading = {this.label_heading} prediction_heading = {this.prediction_heading} />
             </div>
         );
     }
