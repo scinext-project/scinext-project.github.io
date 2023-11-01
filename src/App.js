@@ -21,7 +21,7 @@ class App extends Component {
             <Route path='/' element={<Home />} />
             <Route path='/r0-estimates' element={<R0Estimation />} />
             <Route path='/sota' element={<Sota />} />
-            <Route path="/:path" element={<R0Estimation />} />
+            <Route path="*" element={<R0Estimation />} />
           </Routes>
           <Footer />
         </Container>
